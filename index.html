@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <div ng-controller="ctrl">
+    {{foo}}
+    <input ng-model="incData" />
+    <button ng-click="setData(incData)">Set</button>
+  </div>
+  <div ng-controller="ctrl2">
+    {{foo}}
+    <button ng-click="getData()">Get</button>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="ctrl.js"></script>
+  <script src="ctrl2.js"></script>
+  <script src="service.js"></script>
+</body>
+</html>
